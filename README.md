@@ -1,4 +1,4 @@
-# PostCSS Remove At Rules
+# PostCSS Remove All At-Rules
 
 [PostCSS] plugin to remove all of the at-rules.
 
@@ -37,7 +37,7 @@ If you already use PostCSS, add the plugin to plugins list:
 ```diff
 module.exports = {
   plugins: [
-+   require('postcss-remove-at-rules'),
++   require('postcss-remove-all-at-rules'),
     require('autoprefixer')
   ]
 }

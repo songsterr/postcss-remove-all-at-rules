@@ -1,5 +1,5 @@
 {
-  "name": "postcss-remove-at-rules",
+  "name": "postcss-remove-all-at-rules",
   "version": "0.1.0",
   "description": "PostCSS plugin to remove all of the at-rules",
   "keywords": [
@@ -13,7 +13,7 @@
   },
   "author": "Andrey Subbotin <andrey@subbotin.me>",
   "license": "MIT",
-  "repository": "songsterr/postcss-remove-at-rules",
+  "repository": "songsterr/postcss-remove-all-at-rules",
   "dependencies": {
     "postcss": "^7.0.18"
   },
