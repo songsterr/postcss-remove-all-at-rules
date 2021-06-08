@@ -2,16 +2,25 @@ let postcss = require('postcss')
 
 let plugin = require('./')
 
-async function run (input, output, opts) {
-  let result = await postcss([plugin(opts)]).process(input, { from: undefined })
+function run(input, output, opts) {
+  let result = postcss([plugin(opts)]).process(input, { from: undefined })
   expect(result.css).toEqual(output)
   expect(result.warnings()).toHaveLength(0)
 }
 
-/* Write tests here
+it('removes atrules', () => {
+  run(
+    `.foo {
+      color: red;
+    }
 
-it('does something', async () => {
-  await run('a{ }', 'a{ }', { })
+    @media print {
+      .bar {
+        color: black;
+      }
+    }`,
+    `.foo {
+      color: red;
+    }`
+  )
 })
-
-*/
