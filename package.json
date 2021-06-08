@@ -1,6 +1,6 @@
 {
   "name": "postcss-remove-all-at-rules",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "PostCSS plugin to remove all of the at-rules",
   "keywords": [
     "postcss",
