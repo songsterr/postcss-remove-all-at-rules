@@ -1,9 +1,10 @@
-let postcss = require('postcss')
+/* eslint-env jest */
+const postcss = require('postcss')
 
-let plugin = require('./')
+const plugin = require('./')
 
-function run(input, output, opts) {
-  let result = postcss([plugin(opts)]).process(input, { from: undefined })
+function run (input, output, opts) {
+  const result = postcss([plugin(opts)]).process(input, { from: undefined })
   expect(result.css).toEqual(output)
   expect(result.warnings()).toHaveLength(0)
 }
