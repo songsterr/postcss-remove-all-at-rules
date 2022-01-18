@@ -2,6 +2,13 @@
 
 [PostCSS] plugin to remove all of the at-rules.
 
+![version](https://img.shields.io/npm/v/postcss-remove-all-at-rules?style=flat-square)
+![node-current](https://img.shields.io/node/v/postcss-remove-all-at-rules?style=flat-square)
+![npm](https://img.shields.io/npm/dt/postcss-remove-all-at-rules?style=flat-square)
+![licence](https://img.shields.io/npm/l/postcss-remove-all-at-rules?style=flat-square)
+![Snyk Vulnerabilities for npm package](https://img.shields.io/snyk/vulnerabilities/npm/postcss-remove-all-at-rules?style=flat-square)
+
+
 [PostCSS]: https://github.com/postcss/postcss
 
 ```css
